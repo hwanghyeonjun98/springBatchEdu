@@ -1,0 +1,14 @@
+spring :
+  batch :
+    job :
+      names : ${job.name:NONE}
+      enabled : false
+    jdbc :
+      initialize-schema : always
+  datasource :
+    url : jdbc:mysql://localhost:3306/edu
+    driver-class-name : com.mysql.cj.jdbc.Driver
+    username : edu
+    password : edu001!
+  jpa :
+    show-sql : true
